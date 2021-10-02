@@ -8,13 +8,12 @@ body{
     text-align: center;
     border-bottom: 3px solid white;
     color: white;
-
 }
 
 .footer{
     grid-area: footer;
     text-align: center;
-    border: 2px solid white;
+    border-top: 3px solid white;
     color: white;
 }
 
@@ -25,6 +24,9 @@ body{
     font-size: 1.2em;
     color: white;
     text-align: center;
+    border-right: 3px solid white;
+    border-collapse: collapse;
+    padding: 5%;
 }
 
 .grid-sidebar ul{
@@ -41,21 +43,35 @@ body{
 .grid-main{
     grid-area: main;
     color: white;
+    border-left: 3px solid white;
+    border-collapse: collapse;
+}
+
+.grid-main p{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.link{
+    color: white;
+}
+
+.link:hover{
+    color: blueviolet;
 }
 
 .grid-container{
     display: grid;
-    margin: 1% 0 1% 0;
-    border: 2px solid black;
-    border-radius: 2px;
-    padding: 1%;
+    border-top: 2px solid white;
+    border-collapse: collapse;
+    padding: 2%;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header header"
-    "sidebar . main main"
+    "sidebar sidebar main main"
     "footer footer footer footer";
-    column-gap: 10px;
+    column-gap: 0px;
     row-gap: 10px;
 
 }
